@@ -1,3 +1,3 @@
-https://burgers-culture.tenhopedido.netlify.app/* https://controle-bc.bubbleapps.io/:splat?:query 200!
-/*  https://controle-bc.bubbleapps.io/:splat?:query  200!
-https://tenhopedido.netlify.app/* https://controle-bc.bubbleapps.io/:splat?:query 200!
+https://burgers-culture.tenhopedido.netlify.app/* https://controle-bc.bubbleapps.io/api/1.1/init/data:splat?:query 200!
+/*  https://controle-bc.bubbleapps.io/api/1.1/init/data/:splat?:query  200!
+https://tenhopedido.netlify.app/* https://controle-bc.bubbleapps.io/api/1.1/init/data:splat?:query 200!
