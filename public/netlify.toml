@@ -1,12 +1,6 @@
-# Regras de redirecionamento (proxy)
 [[redirects]]
   from = "/api/*"
-  to = "https://controle-bc.bubbleapps.io/:splat"
+  to = "https://worbyta.com/:splat"  # Adapte conforme seu app Bubble
   status = 200
   force = true
-
-# Cabeçalhos (opcional, se precisar definir CORS ou outros)
-[[headers]]
-  for = "/*"
-    [headers.values]
-    Access-Control-Allow-Origin = "https://tenhopedido.com"
+  headers = {Access-Control-Allow-Origin = "*"}
