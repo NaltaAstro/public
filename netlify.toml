@@ -1,6 +1,6 @@
 [[redirects]]
   from = "/api/*"
-  to = "https://controle-bc.bubbleapps.io/"  # Adapte conforme seu app Bubble
+  to = "https://controle-bc.bubbleapps.io/:splat?:query"  # Adapte conforme seu app Bubble
   status = 200
   force = true
   headers = {Access-Control-Allow-Origin = "*"}
