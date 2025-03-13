@@ -1,5 +1,11 @@
+[headers]
+  [headers./*]
+    Access-Control-Allow-Origin = "*"
+    Access-Control-Allow-Methods = "GET, POST, PUT, DELETE"
+    Access-Control-Allow-Headers = "Authorization, Content-Type"
+
 [[redirects]]
   from = "/*"
-  to = "https://worbyta.com/:splat?query"
+  to = "https://controle-bc.bubbleapps.io/:splat?query"
   status = 200
   force = true
