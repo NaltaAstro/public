@@ -1,11 +1,11 @@
 [[redirects]]
-  from = "/api/*"
+  from = "/*"
   to = "https://controle-bc.bubbleapps.io/:splat?:query"  # Substitua pelo seu endpoint real
   status = 200
   force = true
 
 [[headers]]
-  for = "/api/*"
+  for = "/*"
   [headers.values]
     Access-Control-Allow-Origin = "*"
     Access-Control-Allow-Methods = "GET, POST, PUT, DELETE"
