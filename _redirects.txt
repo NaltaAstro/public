@@ -1,2 +1,3 @@
 https://burgers-culture.tenhopedido.com/* https://controle-bc.bubbleapps.io/:splat?:query 200!
+/api/*  https://controle-bc.bubbleapps.io/:splat  200!
 https://tenhopedido.com/* https://controle-bc.bubbleapps.io/:splat?:query 200!
