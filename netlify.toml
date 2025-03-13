@@ -1,5 +1,5 @@
 [[redirects]]
   from = "/api/*"
-  to = "https://controle-bc.bubbleapps.io/:splat"
+  to = "https://controle-bc.bubbleapps.io/:splat?query"
   status = 200
   force = true
