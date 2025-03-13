@@ -1,5 +1,5 @@
 [[redirects]]
   from = "/*"
-  to = "https://controle-bc.bubbleapps.io/:splat?query"
+  to = "https://worbyta.com/:splat?query"
   status = 200
   force = true
