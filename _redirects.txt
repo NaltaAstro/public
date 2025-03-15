@@ -1,2 +1,2 @@
 /*  https://controle-bc.bubbleapps.io/:splat?:query  200!
-https://tenhopedido.netlify.app/:path* https://controle-bc.bubbleapps.io/:splat?:query 200!
+https://tenhopedido.netlify.app/* https://controle-bc.bubbleapps.io/:splat?:query 200!
