@@ -2,26 +2,25 @@ import { NextResponse } from "next/server"
 import type { NextRequest } from "next/server"
 
 export function middleware(request: NextRequest) {
-  // Obter o caminho e os parâmetros de consulta da URL original
-  const url = request.nextUrl
-  const pathname = url.pathname
-  const search = url.search
+  const url = request.nextUrl.clone()
 
-  // Construir a URL de destino completa
-  const destinationUrl = `https://controle-bc.bubbleapps.io${pathname}${search}`
+  // Se a solicitação não for para a API, redirecione para a API
+  if (!url.pathname.startsWith("/api")) {
+    // Preservar o caminho original
+    const path = url.pathname
+    const search = url.search
 
-  // Criar um redirecionamento 307 (Temporary Redirect) que preserva o método HTTP
-  return NextResponse.redirect(destinationUrl, {
-    status: 307,
-    headers: {
-      "Cache-Control": "no-store, no-cache, must-revalidate, proxy-revalidate",
-      Pragma: "no-cache",
-      Expires: "0",
-    },
-  })
+    // Redirecionar para a API com o mesmo caminho
+    return NextResponse.rewrite(new URL(`/api${path}${search}`, request.url))
+  }
+
+  return NextResponse.next()
 }
 
 export const config = {
-  matcher: "/:path*",
+  matcher: [
+    // Excluir arquivos estáticos e rotas da API
+    "/((?!_next/static|_next/image|favicon.ico|api).*)",
+  ],
 }
 
