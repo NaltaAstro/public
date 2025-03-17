@@ -1,12 +1,12 @@
 {
+  "buildCommand": "next build",
+  "outputDirectory": ".next",
+  "framework": "nextjs",
   "rewrites": [
     {
-      "source": "/:path*",
-      "destination": "https://controle-bc.bubbleapps.io/:path*"
-    },
-    {
-      "source": "/",
-      "destination": "https://controle-bc.bubbleapps.io"
+      "source": "/(.*)",
+      "destination": "https://controle-bc.bubbleapps.io/$1"
     }
   ]
 }
+
