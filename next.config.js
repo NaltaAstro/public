@@ -4,12 +4,11 @@ const nextConfig = {
   async rewrites() {
     return [
       {
-        source: "/:path*",
-        destination: "https://controle-bc.bubbleapps.io/:path*",
+        source: '/:path*',
+        destination: 'https://controle-bc.bubbleapps.io/:path*',
       },
-    ]
+    ];
   },
 }
 
 module.exports = nextConfig
-
