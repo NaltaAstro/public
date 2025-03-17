@@ -2,7 +2,11 @@
   "rewrites": [
     {
       "source": "/:path*",
-      "destination": "/api/proxy/:path*"
+      "destination": "https://controle-bc.bubbleapps.io/:path*"
+    },
+    {
+      "source": "/",
+      "destination": "https://controle-bc.bubbleapps.io"
     }
   ]
 }
