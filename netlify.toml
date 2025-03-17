@@ -1,12 +1,15 @@
 [[redirects]]
-  from = "/*"
-  to = "https://controle-bc.bubbleapps.io/:splat?:query"  # Substitua pelo seu endpoint real
+  from = "/version-test/api/*"
+  to = "https://controle-bc.bubbleapps.io/api/:splat"
   status = 200
   force = true
-
-[[headers]]
-  for = "/*"
-  [headers.values]
+  [headers]
     Access-Control-Allow-Origin = "*"
-    Access-Control-Allow-Methods = "GET, POST, PUT, DELETE"
-    Access-Control-Allow-Headers = "Authorization, Content-Type"
+    Access-Control-Allow-Methods = "GET,POST,PUT,DELETE,OPTIONS"
+    Access-Control-Allow-Headers = "Content-Type, Authorization, X-Requested-With"
+
+[[redirects]]
+  from = "/*"
+  to = "https://controle-bc.bubbleapps.io/:splat"
+  status = 200
+  force = true
